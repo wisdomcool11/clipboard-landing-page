@@ -416,7 +416,7 @@ footer{
 }
 
 /* #### @media 480px #### */
-@media (max-width: 770px) {
+@media (max-width: 480px) {
     body{
         width: 100%;
     }
