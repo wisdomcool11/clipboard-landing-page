@@ -9,15 +9,18 @@
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <!-- fontawesome -->
-        <!-- font awesome -->
-        <script src="https://kit.fontawesome.com/9753f25b53.js" crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/9753f25b53.js" crossorigin="anonymous"></script>
+    <!-- scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 <body>
 
     <header>
         <div class="header__wrap">
             <a href="#">
-                <img src="page_logo.png" alt="page icon image">
+                <img src="page_logo.png" alt="page icon image" class="image">
             </a>
             <h1>A history of everything you copy</h1>
             <p>
@@ -32,7 +35,7 @@
         </div>
     </header>
     <main>
-        <section>
+        <section class="sec-01">
             <div class="computer__wrap">
                 <div class="track__container">
                     <h2>Keep track of your snippets</h2>
@@ -42,9 +45,11 @@
                         organize everything.
                     </p>
                 </div>
+                
                 <div class="track__img">
                     <img src="computer.JPG" alt="">
                 </div>
+
                 <div class="quick__srch">
                     <h2>Quick Search</h2>
                     <p>
@@ -69,7 +74,7 @@
             </div>
         </section>
         
-        <section>
+        <section class="sec-02">
             <div class="devices__wrap">
                 <div class="access">
                     <h2>Access Clipboard Anywhere</h2>
@@ -85,7 +90,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="sec-03">
             <div class="plain__wrap">
                 <div class="supercharge_heading">
                     <h2>Supercharge your workflow</h2>
@@ -120,11 +125,11 @@
             </div>
 
             <div class="logo">
-                <img src="logo_google.jpg" alt="google img">
-                <img src="logo_ibm.jpg" alt="ibm img">
-                <img src="logo-miscrosoft.jpg" alt="microsoft img">
+                <img src="logo_google.jpg" alt="google img" id="logo-img-1">
+                <img src="logo_ibm.jpg" alt="ibm img" id="logo-img-2">
+                <img src="logo-miscrosoft.jpg" alt="microsoft img" id="logo-img-3">
                 <img src="logo_hp.jpg" alt="hp img">
-                <img src="logo_vector.jpg" alt="microsoft img">
+                <img src="logo_vector.jpg" alt="microsoft img" id="logo-img-4">
             </div>
 
             <div class="cta__box">
@@ -141,7 +146,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer >
         <div class="footer__wrap">
             <img src="page_logo.png" alt="page icon image">
             <div class="faq">
@@ -158,6 +163,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="app.js"></script>
     
 </body>
 </html>
