@@ -153,7 +153,7 @@ header{
     grid-column: 1/4;
 }
 .track__container h2{
-    font-size: 26px;
+    font-size: 2rem;
     margin-bottom: 25px;
 }
 .track__container p{
@@ -440,9 +440,7 @@ footer{
 
 /* #### @media 480px #### */
 @media (max-width: 770px) {
-    body{
-        width: 100%;
-    }
+
    header{
     width: 100%;
     background-image: url(bg-header-mobile.JPG);
@@ -453,14 +451,15 @@ footer{
    } 
    .header__wrap{
     width: 100%;
-    padding: 0 200px;
+    padding: 0 20px;
    }
    .header__wrap h1{
-    width: 100%;
-    font-size: 30px;
+    width: 80%;
+    font-size: 28px;
+    margin: auto;
    }
    .header__wrap p{
-    width: 400px;
+    width: 100%;
     font-size: 17px;
     letter-spacing: 1px;
    }
@@ -478,7 +477,7 @@ footer{
         width: 100%;
         /* height: 100%; */
         margin: 0;
-        padding: 80px 20px;
+        padding: 40px 20px;
         /* grid-row-gap: 30px; */
         /* grid-column-gap: 0px; */
     }
@@ -487,12 +486,13 @@ footer{
         grid-column: 1/3 ;
     }
     .track__container h2{
-        font-size: 25px;
+        font-size: 1.8;
         width: 100%;
         margin-bottom: 25px;
     }
     .track__container p{
         width: 100%;
+        font-size: 1.025rem;
     }
     .track__body{
         flex-direction: column;
@@ -533,20 +533,23 @@ footer{
         margin-bottom: 30px;
     }
     .devices__wrap h2{
-        font-size: 23px;
-        width: 100%;
+        font-size: 1.8rem;
+        width: 80%;
         margin-bottom: 30px;
+        margin: auto;
     }
     .devices__wrap p{
-        width: 100%;
+        width: 90%;
         padding: 0 1rem;
+        font-size: 1.025rem;
+        margin: auto;
     }
     .access__img {
-        width: auto;
+        width: 100%;
         z-index: 10;
     }
     .access__img img{
-        width: 100%;
+        width: 95%;
         height: 320px;
     }
 
@@ -556,7 +559,7 @@ footer{
     }
     .plain__wrap{
         width: 100%;
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr; */
         grid-template-rows: repeat(4, 1fr);
         grid-row-gap: 0px ; 
         grid-column-gap: 0px ; 
@@ -566,17 +569,32 @@ footer{
     .supercharge_heading{
         grid-template-columns: 1/4;
     }
+    .supercharge_heading h2{
+        font-size: 1.8rem;
+    }
+    .supercharge_heading p{
+        font-size: 1.025rem;
+    }
     .blacklist{
         grid-column: 1/4;
         width: 100%;
+    }
+    .blacklist p{
+        font-size: 1.025rem;
     }
     .plain_text{
         grid-column: 1/5;
         grid-row: 3/4;
     }
+    .plain_text p{
+        font-size: 1.025rem;
+    }
     .eye{
         grid-column: 1/5;
         grid-row: 4/5;
+    }
+    .eye p{
+       font-size: 1.025rem;
     }
     .blacklist,
     .plain_text,
@@ -597,23 +615,15 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-
     }
-    /* #logo-img-1{
-        width: 80%;
-        grid-column: 1/3;
-        background-color: yellow;
-    } */
-
     .cta__box{
         width: 100%;
     }
-    .cta__box h1{
-        width: 100%;
-        font-size: 26px;
-        word-spacing: 8px;
+    .cta__box h2{
+        font-size: 1.7rem;
     }
     .cta__box p{
+        font-size: 1.025rem;
         width: 100%;
         padding:0 14px;
     }
@@ -639,6 +649,243 @@ footer{
     }
     .footer__wrap{
         width: 388px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+    .footer__wrap img{
+        display: block;
+        grid-column: 1/3;
+        margin: auto;
+    }
+    .faq{
+        height: 200px;
+        grid-column: 1/3;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .social__icons{
+        width: 200px;
+        margin: auto;
+        justify-content: center;
+    }
+}
+@media (max-width: 480px) {
+
+   header{
+    width: 100%;
+    background-image: url(bg-header-mobile.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+   } 
+   .header__wrap{
+    width: 100%;
+    padding: 0 20px;
+   }
+   .header__wrap h1{
+    width: 100%;
+    font-size: 28px;
+    margin: auto;
+   }
+   .header__wrap p{
+    width: 100%;
+    font-size: 17px;
+    letter-spacing: 1px;
+   }
+   .btn__wrap {
+        width: 100%;
+   }
+   .btn__ios, .btn__mac{
+        width: 180px;
+        font-size: 14px;
+    }
+
+    /* ## section 01 styling # */
+
+    .computer__wrap{
+        width: 100%;
+        /* height: 100%; */
+        margin: 0;
+        padding: 40px 20px;
+        /* grid-row-gap: 30px; */
+        /* grid-column-gap: 0px; */
+    }
+    .track__container{
+        width: 100%;
+        grid-column: 1/3 ;
+    }
+    .track__container h2{
+        font-size: 1.8;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .track__container p{
+        width: 100%;
+        font-size: 1.025rem;
+    }
+    .track__body{
+        flex-direction: column;
+    }
+    .track__img {
+        grid-column: 1/3;
+        margin-top: 0px;
+    }
+    .track__img img{
+        width: 100%;
+    }
+    /* .track__content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        row-gap: 30px;
+    } */
+
+    /* quick srch */
+    .quick__srch{
+        text-align: center;
+        margin-top: 0px;
+    }
+    .icloud{
+        text-align: center;
+        margin-top: 0px;
+    }
+    .history{
+        text-align: center;
+    }
+   
+    /* sec 02 */
+    .devices__wrap{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 600px;
+        margin-bottom: 30px;
+    }
+    .devices__wrap h2{
+        font-size: 1.8rem;
+        width: 80%;
+        margin-bottom: 30px;
+        margin: auto;
+    }
+    .devices__wrap p{
+        width: 90%;
+        padding: 0 1rem;
+        font-size: 1.025rem;
+        margin: auto;
+    }
+    .access__img {
+        width: 100%;
+        z-index: 10;
+    }
+    .access__img img{
+        width: 95%;
+        height: 320px;
+    }
+
+    /* sec 03 */
+    .sec-03{
+        width: 100%;
+    }
+    .plain__wrap{
+        width: 100%;
+        /* grid-template-columns: 1fr; */
+        grid-template-rows: repeat(4, 1fr);
+        grid-row-gap: 0px ; 
+        grid-column-gap: 0px ; 
+        justify-content: center;
+        align-items: center;
+    }
+    .supercharge_heading{
+        grid-template-columns: 1/4;
+    }
+    .supercharge_heading h2{
+        font-size: 1.8rem;
+    }
+    .supercharge_heading p{
+        font-size: 1.025rem;
+    }
+    .blacklist{
+        grid-column: 1/4;
+        width: 100%;
+    }
+    .blacklist p{
+        font-size: 1.025rem;
+    }
+    .plain_text{
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+    .plain_text p{
+        font-size: 1.025rem;
+    }
+    .eye{
+        grid-column: 1/5;
+        grid-row: 4/5;
+    }
+    .eye p{
+       font-size: 1.025rem;
+    }
+    .blacklist,
+    .plain_text,
+    .eye {
+       width: 400px;
+       margin: auto;
+    }
+
+    .blacklist p,
+    .plain_text p,
+    .eye p{
+        width: 100%;
+    }
+
+    .logo{
+        width: 100%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .cta__box{
+        width: 100%;
+    }
+    .cta__box h2{
+        font-size: 1.7rem;
+    }
+    .cta__box p{
+        font-size: 1.025rem;
+        width: 100%;
+        padding:0 14px;
+    }
+    .btn__wrap{
+        /* containers the header btn */
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: 65px;
+    }
+
+    .btn__ios{
+        grid-column: 1/3;
+    }
+    .btn__mac{
+        grid-column: 1/3;
+        grid-row: 2;
+    }
+
+    footer{
+        width: 100%;
+        background-color: #f1f1f1;
+    }
+    .footer__wrap{
+        width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
         justify-content: center;
